@@ -12,7 +12,7 @@ const IconBlock = props => {
       className={"icon-block icon-block-" + props.weatherId + classStr}
     >
       <p>{day}</p>
-      <img alt="Sunny" src="/assets/images/sunny.png" />
+      <img alt="Sunny" src="assets/images/sunny.png" />
       <div className="min-max-temp">
         <p>
           {props.weather.max_temp}&deg; {props.weather.min_temp}&deg;

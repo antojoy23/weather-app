@@ -5,7 +5,7 @@ import Summary from "./Summary";
 // import Graph from "./Graph";
 import Footer from "./Footer";
 
-const API = "http://api.openweathermap.org/";
+const API = "https://api.openweathermap.org/";
 
 class Weather extends Component {
   state = {};

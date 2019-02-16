@@ -19,7 +19,7 @@ const Summary = props => {
       </div>
       <div className="temp-details-block">
         <div className="temp-block">
-          <img alt="Fog" src="/assets/images/fog.png" />
+          <img alt="Fog" src="assets/images/fog.png" />
           <p>{props.weather.temp}&deg; C</p>
         </div>
         <div className="details-block">
