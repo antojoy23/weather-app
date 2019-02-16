@@ -1,13 +1,13 @@
 {
-  "main.css": "/antojoy23/weather-app/static/css/main.d076995b.chunk.css",
-  "main.js": "/antojoy23/weather-app/static/js/main.de19361b.chunk.js",
-  "main.js.map": "/antojoy23/weather-app/static/js/main.de19361b.chunk.js.map",
-  "runtime~main.js": "/antojoy23/weather-app/static/js/runtime~main.b20b419f.js",
-  "runtime~main.js.map": "/antojoy23/weather-app/static/js/runtime~main.b20b419f.js.map",
-  "static/js/2.28a3cdcd.chunk.js": "/antojoy23/weather-app/static/js/2.28a3cdcd.chunk.js",
-  "static/js/2.28a3cdcd.chunk.js.map": "/antojoy23/weather-app/static/js/2.28a3cdcd.chunk.js.map",
-  "index.html": "/antojoy23/weather-app/index.html",
-  "precache-manifest.d697e3a63964a8aedfdecdb5e54a9da3.js": "/antojoy23/weather-app/precache-manifest.d697e3a63964a8aedfdecdb5e54a9da3.js",
-  "service-worker.js": "/antojoy23/weather-app/service-worker.js",
-  "static/css/main.d076995b.chunk.css.map": "/antojoy23/weather-app/static/css/main.d076995b.chunk.css.map"
+  "main.css": "/weather-app/static/css/main.d076995b.chunk.css",
+  "main.js": "/weather-app/static/js/main.c21835e4.chunk.js",
+  "main.js.map": "/weather-app/static/js/main.c21835e4.chunk.js.map",
+  "runtime~main.js": "/weather-app/static/js/runtime~main.8d9c99a4.js",
+  "runtime~main.js.map": "/weather-app/static/js/runtime~main.8d9c99a4.js.map",
+  "static/js/2.28a3cdcd.chunk.js": "/weather-app/static/js/2.28a3cdcd.chunk.js",
+  "static/js/2.28a3cdcd.chunk.js.map": "/weather-app/static/js/2.28a3cdcd.chunk.js.map",
+  "index.html": "/weather-app/index.html",
+  "precache-manifest.032ac5a1c95b717a385823ab6296fd14.js": "/weather-app/precache-manifest.032ac5a1c95b717a385823ab6296fd14.js",
+  "service-worker.js": "/weather-app/service-worker.js",
+  "static/css/main.d076995b.chunk.css.map": "/weather-app/static/css/main.d076995b.chunk.css.map"
 }
