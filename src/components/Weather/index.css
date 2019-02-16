@@ -75,3 +75,73 @@ p {
   border: 1px solid #ddd;
   padding: 20px;
 }
+
+input[type="text"] {
+  width: 30%;
+  position: relative;
+  padding: 12px 20px;
+  margin-top: 10%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 10%;
+  background-color: transparent;
+  color: #000;
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: 1px solid #008cba;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #cae9f5;
+}
+
+.api-key-block {
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.loader-block {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5%;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

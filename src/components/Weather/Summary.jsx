@@ -13,7 +13,9 @@ const Summary = props => {
         <p>
           {props.weather.day}, {props.weather.time}
         </p>
-        <p>{props.weather.weather_condition}</p>
+        <p className="weather-description">
+          {props.weather.weather_description}
+        </p>
       </div>
       <div className="temp-details-block">
         <div className="temp-block">

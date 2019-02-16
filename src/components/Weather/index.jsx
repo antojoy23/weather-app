@@ -6,13 +6,28 @@ import Summary from "./Summary";
 import Footer from "./Footer";
 
 const API = "http://api.openweathermap.org/";
-const API_KEY = "YOUR_API_KEY";
 
 class Weather extends Component {
   state = {};
   render() {
+    if (this.state.api_key === undefined || this.state.api_key === "") {
+      return (
+        <div className="api-key-block">
+          <input
+            className="api-key-input"
+            type="text"
+            placeholder="Enter your API KEY here"
+          />
+          <input type="submit" onClick={this.handleApiSubmit} />
+        </div>
+      );
+    }
     if (this.state.city === undefined) {
-      return null;
+      return (
+        <div className="loader-block">
+          <div className="loader" />
+        </div>
+      );
     }
     return (
       <div className="main-container">
@@ -22,10 +37,12 @@ class Weather extends Component {
     );
   }
 
-  componentDidMount() {
-    console.log("Component mounted");
+  handleApiSubmit = () => {
+    this.setState({
+      api_key: escape($(".api-key-input").val())
+    });
     this.getGeoLocation();
-  }
+  };
 
   handleDayChange = index => {
     let newCurrentWeather = this.state.weatherDetails[index];
@@ -61,7 +78,9 @@ class Weather extends Component {
   getWeatherForecast = (lat, lon) => {
     let self = this;
     $.getJSON(
-      `${API}data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+      `${API}data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${
+        this.state.api_key
+      }`
     ).then(res => self.processResponse(res));
   };
 
@@ -89,7 +108,6 @@ class Weather extends Component {
       weatherDetails,
       currentWeather: weatherDetails[0]
     });
-    console.log(weatherDetails);
   };
 
   getDay = timestamp => {
