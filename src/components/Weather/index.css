@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 10px;
+}
+
+.html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.tdc-block {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.temp-details-block {
+  display: flex;
+  width: 100%;
+}
+
+.temp-block {
+  position: relative;
+  display: flex;
+  width: 60%;
+  text-align: left;
+  margin: auto 0;
+  padding-left: 20px;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+}
+
+.temp-block p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.details-block {
+  margin-left: auto;
+  width: 40%;
+  text-align: left;
+}
+
+.footer-weather-icon-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-block {
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.icon-block img {
+  width: 48px;
+}
+
+.icon-block p {
+  line-height: 0;
+}
+
+.main-container {
+  width: 520px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
