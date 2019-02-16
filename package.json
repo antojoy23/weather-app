@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/antojoy23/weather-app",
+  "homepage": "https://antojoy23.github.com/weather-app",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
