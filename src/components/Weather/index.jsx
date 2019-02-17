@@ -175,9 +175,6 @@ class Weather extends Component {
       case "02":
         iconName = "partly-sunny";
         break;
-      case "04":
-        iconName = "cloud";
-        break;
       case "09":
       case "10":
         iconName = "rain";
