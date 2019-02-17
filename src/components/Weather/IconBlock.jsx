@@ -2,7 +2,7 @@ import React from "react";
 
 const IconBlock = props => {
   let classStr = "";
-  let day = props.weather.day.substring(0, 3);
+  let day = props.weatherId.substring(0, 3);
   if (props.isactive === "true") {
     classStr = " active";
   }
@@ -12,7 +12,10 @@ const IconBlock = props => {
       className={"icon-block icon-block-" + props.weatherId + classStr}
     >
       <p>{day}</p>
-      <img alt="Sunny" src="assets/images/sunny.png" />
+      <img
+        alt={props.weather.weather_description}
+        src={"assets/images/" + props.weather.weather_icon + ".png"}
+      />
       <div className="min-max-temp">
         <p>
           {props.weather.max_temp}&deg; {props.weather.min_temp}&deg;

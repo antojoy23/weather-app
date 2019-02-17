@@ -5,13 +5,13 @@ const Summary = props => {
     return null;
   }
   return (
-    <div className="summary-block">
+    <div className="summary-block wsection">
       <div className="tdc-block">
         <p>
           {props.city.name}, {props.city.country}
         </p>
         <p>
-          {props.weather.day}, {props.weather.time}
+          {props.currentDay}, {props.weather.time}
         </p>
         <p className="weather-description">
           {props.weather.weather_description}
@@ -19,7 +19,10 @@ const Summary = props => {
       </div>
       <div className="temp-details-block">
         <div className="temp-block">
-          <img alt="Fog" src="assets/images/fog.png" />
+          <img
+            alt={props.weather.weather_description}
+            src={"assets/images/" + props.weather.weather_icon + ".png"}
+          />
           <p>{props.weather.temp}&deg; C</p>
         </div>
         <div className="details-block">

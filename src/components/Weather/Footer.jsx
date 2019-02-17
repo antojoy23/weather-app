@@ -1,36 +1,36 @@
 import React from "react";
+import $ from "jquery";
 import IconBlock from "./IconBlock";
 
 const Footer = props => {
-  let addedDays = [];
-  let iconBlocks = props.data.weatherDetails.map(function(details) {
-    if (addedDays.indexOf(details.day) === -1) {
-      let detailsId = props.data.weatherDetails.indexOf(details);
-      addedDays.push(details.day);
-      if (addedDays.length === 1) {
-        return (
-          <IconBlock
-            key={detailsId}
-            weatherId={detailsId}
-            onDayChange={props.onDayChange}
-            weather={details}
-            isactive="true"
-          />
-        );
-      }
-      return (
+  let isActiveSet;
+  let iconBlocks = [];
+  $.each(props.data.weatherDetails, function(index, details) {
+    let iconBlock;
+    if (isActiveSet === undefined) {
+      isActiveSet = true;
+      iconBlock = (
         <IconBlock
-          key={detailsId}
+          key={index}
+          weatherId={index}
           onDayChange={props.onDayChange}
-          weatherId={detailsId}
-          weather={details}
+          weather={details[0]}
+          isactive="true"
+        />
+      );
+    } else {
+      iconBlock = (
+        <IconBlock
+          key={index}
+          onDayChange={props.onDayChange}
+          weatherId={index}
+          weather={details[0]}
         />
       );
     }
-    return null;
+    iconBlocks.push(iconBlock);
   });
-  console.log(iconBlocks);
-  return <div className="footer-weather-icon-block">{iconBlocks}</div>;
+  return <div className="footer-weather-icon-block wsection">{iconBlocks}</div>;
 };
 
 export default Footer;
